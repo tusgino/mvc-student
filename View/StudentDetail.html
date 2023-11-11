@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Sinh Viên</title>
+  <style>
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th,
+    td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #028d53;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Chi tiết Sinh Viên</h1>
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <td>
+        <?php echo $student->getId(); ?>
+      </td>
+    </tr>
+    <tr>
+      <th>Tên</th>
+      <td>
+        <?php echo $student->getName(); ?>
+      </td>
+    </tr>
+    <tr>
+      <th>Tuổi</th>
+      <td>
+        <?php echo $student->getAge(); ?>
+      </td>
+    </tr>
+    <tr>
+      <th>Trường</th>
+      <td>
+        <?php echo $student->getUniversity(); ?>
+      </td>
+    </tr>
+  </table>
+
+  <a href="javascript:history.back()">Quay lại danh sách sinh viên</a>
+
+</body>
+
+</html>
